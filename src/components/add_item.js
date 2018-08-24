@@ -8,9 +8,7 @@ class AddItem extends Component {
     handleAddItem = async values => {
         await this.props.addItem(values);
 
-        this.props.reset();
-
-        // this.props.history.push('/');
+        this.props.history.push('/');
     }
 
     renderInput({label, input, meta: {touched, error}}){
